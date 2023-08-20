@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoin House shopping site</title>
+
+        <!-- bootstrap  css1 js1-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!--  font awesome 5.15.4 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- owlcarouse  css 2 js1-->
+        <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+        <!-- animate style  css1-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <!-- start preloader -->
+        <div id="preloader">
+            <div class="dot-spinner">
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+                <div class="dot-spinner__dot"></div>
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!-- start header -->
+        <header>
+            <nav class=" py-3 navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div class="w-100 d-flex justify-content-between align-items-center ">
+                        <div class="d-flex  nav_left_side ">
+                            <a href="#" class="p-0 me-3 navbar-brand">
+                                <img src="./assets/imgs/logos/logo.png.webp" width="200px" alt="logo">
+                            </a>
+                            <div class="ms-0 ms-lg-5 nav_btn_list_group">
+                                <div class="d-flex justify-content-end">
+                                    <div class="px-2 d-flex align-items-center nav_toggle_btn_group">
+                                        <span class="d-block d-lg-none text-uppercase fw-bold">Menu</span>
+                                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav" >
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div id="mynav" class="navbar-collapse collapse">
+                                    <ul class="navbar-nav text-uppercase fw-semibold">
+                                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                                        <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+                                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                                        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav_right_side">
+                            <ul class="p-0 m-0 list-unstyled d-flex  content_icon_group">
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                                <li class="px-2"><a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
+                                <li class="px-2"><a href="javascript:void(0)" class="nav-link search_btn"><i class="fas fa-search"></i></a></li>
+                                <li class="px-2">
+                                    <a href="#" class="nav-link">
+                                        <img src="./assets/imgs/avators/agent-2.jpg" class="rounded-circle" width="100%" height="100%" alt="profile-pic">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- start modal area  -->
+                        <div id="search_modal" class="search_modal">
+                            <div class="modal_content_container">
+                                <div class="form-group">
+                                    <input type="text" name="search_product" id="search_product" class="form-control shadow-none outline-none" placeholder="Search Item">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- end modal area -->
+                    </div>
+                </div>
+                
+            </nav>
+
+            <!-- start banner section -->
+            <section>
+                <div class="container-fluid">
+                    <div id="banner_coursel" class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item ">
+                                    <div class="banner_content" style="background-image: url(./assets/imgs/banners/h1_hero1.png.webp);">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6 col-md-10 col-sm-12">
+                                                <div class="text-center banner_content_header">
+                                                    <h1 class="text-uppercase">
+                                                        Fashion Changing Always
+                                                    </h1>
+                                                </div>
+                                                <div class="banner_content_footer">
+                                                    <!-- start global btn -->
+                                                    <div class="text-center global_btn_container">
+                                                        <a href="#" class="global_btn">Shop Now</a>
+                                                    </div>
+                                                    <!-- end global btn -->
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="banner_content"  style="background-image: url(./assets/imgs/banners/h1_hero2.png.webp);">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6 col-md-10 col-sm-12">
+                                                <div class="text-center banner_content_header">
+                                                    <h1 class="text-uppercase">
+                                                        Fashion Changing Always
+                                                    </h1>
+                                                </div>
+                                                <div class="banner_content_footer">
+                                                    <!-- start global btn -->
+                                                    <div class="text-center global_btn_container">
+                                                        <a href="#" class="global_btn">Shop Now</a>
+                                                    </div>
+                                                    <!-- end global btn -->
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="owl-item ">
+                                    <div class="banner_content"  style="background-image: url(./assets/imgs/banners/h1_hero3.png.webp);">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-6 col-md-10 col-sm-12">
+                                                <div class="text-center banner_content_header">
+                                                    <h1 class="text-uppercase">
+                                                        Fashion Changing Always
+                                                    </h1>
+                                                </div>
+                                                <div class="banner_content_footer">
+                                                    <!-- start global btn -->
+                                                    <div class="text-center global_btn_container">
+                                                        <a href="#" class="global_btn">Shop Now</a>
+                                                    </div>
+                                                    <!-- end global btn -->
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end banner section -->
+        </header>
+        <!-- end header -->
+
+        <!-- start show case menu section -->
+        <section class="py-5">
+            <div class="container-fluid">
+                <div class="show_case_container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="showcase_content_container" style="background-image: url(./assets/imgs/products/popular1.png.webp);">
+                                <!-- start global btn -->
+                                <div class="text-center global_btn_container">
+                                    <a href="#" class="global_btn">Shop Now</a>
+                                </div>
+                                <!-- end global btn -->
+                                <div class="showcase_title">
+                                    <h3 class="text-center text-uppercase">Glasses</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="showcase_content_container"  style="background-image: url(./assets/imgs/products/popular2.png.webp);">
+                                <!-- start global btn -->
+                                <div class="text-center global_btn_container">
+                                    <a href="#" class="global_btn">Shop Now</a>
+                                </div>
+                                <!-- end global btn -->
+                                <div class="showcase_title">
+                                    <h3 class="text-center text-uppercase">Watches</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="showcase_content_container" style="background-image: url(./assets/imgs/products/popular3.png.webp);">
+                                <!-- start global btn -->
+                                <div class="text-center global_btn_container">
+                                    <a href="#" class="global_btn">Shop Now</a>
+                                </div>
+                                <!-- end global btn -->
+                                <div class="showcase_title">
+                                    <h3 class="text-center text-uppercase">Jackets</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="showcase_content_container" style="background-image: url(./assets/imgs/products/popular4.png.webp);">
+                                <!-- start global btn -->
+                                <div class="text-center global_btn_container">
+                                    <a href="#" class="global_btn">Shop Now</a>
+                                </div>
+                                <!-- end global btn -->
+                                <div class="showcase_title">
+                                    <h3 class="text-center text-uppercase">Clothes</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end show case menu section -->
+
+        <!-- Start new arrival section -->
+        <section id="shop">
+            <div class="container">
+                <!-- start global title -->
+                <div class="global_title_container">
+                    <h1 class="text-center text-uppercase global_title">New <br> Arrival</h1>
+                </div>
+                <!-- end global title -->
+                <div class="arrival_content_container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn ">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form ">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3 " >
+                            <div class="product_main_container">
+                                <div class="product_edit_btn">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="product_img">
+                                    <img src="./assets/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                                </div>
+                                <div class="product_name_group active">
+                                    <h4 class="text-center">Knitted Jumper</h4>
+                                    <span class="text-center fw-semibold d-block">$ 30.00</span>
+                                </div>
+                                <div class="product_edit_form ">
+                                    <form action="" method="" enctype="multipart/form-data">
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_name" id="product_name" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Name">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="text" name="product_price" id="product_price" class="form-control rounded-0 shadow-none outline-none text-center" placeholder="Product Price">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 mb-2">
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-grid">
+                                                    <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end new arrival section -->
+
+        <!-- start about section -->
+        <section id="about">
+            <div class="container-fluid">
+                <div class="about_title_container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-10 col-sm-12">
+                            <div>
+                                <h1 class="text-center text-uppercase about_title">collection houses our first-ever</h1>
+                                <!-- start global btn -->
+                                <div class="text-center global_btn_container">
+                                    <a href="#" class="global_btn">About Us</a>
+                                </div>
+                                <!-- end global btn -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- Start established section -->
+        <section class="py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container l_f" style="background-image: url('./assets/imgs/backgrounds/popular-imtes1.png.webp');">
+                            <div class="established_content">
+                                <h2>Established fact that by the readable content</h2>
+                                <!-- start global btn -->
+                                <div class="text-start global_btn_container">
+                                    <a href="#" class="global_btn">About Us</a>
+                                </div>
+                                <!-- end global btn -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="p-4 d-flex justify-content-start align-items-end established_content_container r_t" style="background-image: url('./assets/imgs/backgrounds/popular-imtes2.png.webp');">
+                            <div class="established_content">
+                                <h2>Established fact that by the readable content</h2>
+                                <!-- start global btn -->
+                                <div class="text-start global_btn_container">
+                                    <a href="#" class="global_btn">About Us</a>
+                                </div>
+                                <!-- end global btn -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end established section -->
+
+        <!-- start service section -->
+        <section>
+            <div class="service_section ">
+                <div class="p-0 m-0 row">
+                    <div class="p-5 col-lg-3 col-md-6 col-sm-12">
+                        <div class="service_content_container">
+                            <div class="service_header_icon">
+                                <img src="./assets/imgs/icons/services1.svg" width="70px" alt="service-icon">
+                            </div>
+                            <div class="pt-2 service_content_body">
+                                <h4 class="service_title">Fast & Free Delivery</h4>
+                                <span class="fw-semibold text-muted">Free delivery on all orders</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 col-lg-3 col-md-6 col-sm-12">
+                        <div class="service_content_container">
+                            <div class="service_header_icon">
+                                <img src="./assets/imgs/icons/services2.svg" width="50px" alt="service-icon">
+                            </div>
+                            <div class="pt-2 service_content_body">
+                                <h4 class="service_title">Fast & Free Delivery</h4>
+                                <span class="fw-semibold text-muted">Free delivery on all orders</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 col-lg-3 col-md-6 col-sm-12">
+                        <div class="service_content_container">
+                            <div class="service_header_icon">
+                                <img src="./assets/imgs/icons/services3.svg" width="50px" alt="service-icon">
+                            </div>
+                            <div class="pt-2 service_content_body">
+                                <h4 class="service_title">Fast & Free Delivery</h4>
+                                <span class="fw-semibold text-muted">Free delivery on all orders</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="p-5 col-lg-3 col-md-6 col-sm-12">
+                        <div class="service_content_container">
+                            <div class="service_header_icon">
+                                <img src="./assets/imgs/icons/services4.svg" width="50px" alt="service-icon">
+                            </div>
+                            <div class="pt-2 service_content_body">
+                                <h4 class="service_title">Fast & Free Delivery</h4>
+                                <span class="fw-semibold text-muted">Free delivery on all orders</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service section -->
+
+        <!-- start our story section -->
+        <section id="blog" class="py-5 our_story_section">
+            <div class="container">
+                <!-- start global title -->
+                <div class="global_title_container">
+                    <h1 class="text-center text-uppercase global_title">Our Story</h1>
+                    <p class="text-center fw-semibold  global_title_para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <!-- end global title -->
+                <div class="mb-5 story_img_container">
+                    <img src="./assets/imgs/backgrounds/about1.png.webp" width="100%" alt="story img">
+                </div>
+
+                <!-- start global title -->
+                <div class="global_title_container">
+                    <h1 class="text-center text-uppercase global_title">Our Story</h1>
+                    <p class="text-center fw-semibold  global_title_para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <!-- end global title -->
+                <div class="story_img_container">
+                    <img src="./assets/imgs/backgrounds/about2.png.webp" width="100%" alt="story img">
+                </div>
+            </div>
+        </section>
+        <!-- end our story section -->
+
+        <!-- start google map section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="map_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15234.905066670965!2d96.47310282707527!3d17.328751583832197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c3d6e000407aeb%3A0x488dd8e562ff66f5!2sHotel%20Aroma!5e0!3m2!1smy!2smm!4v1691833611198!5m2!1smy!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- end google map section -->
+
+        <!-- start contact section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <form action="" method="" class="contact_form" enctype="multipart/form-data">
+                            <h3 class="mb-5 text-uppercase form_title">Get In Touch</h3>
+                            <div class="row">
+                                <div class="col-12 mb-4 form-group">
+                                    <textarea name="message" id="message" class="form-control border-1 rounded-0 shadow-none outline-none" cols="30" rows="10" placeholder="Enter Messgae"></textarea>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 mb-4">
+                                    <input type="text" name="user_name" id="user_name" class="form-control border-1 rounded-0 shadow-none outline-none" placeholder="Enter Your Name">
+                                </div>
+                                <div class="col-lg-6 col-md-12 mb-4">
+                                    <input type="email" name="email" id="user_email" class="form-control border-1 rounded-0 shadow-none outline-none" placeholder="Enter Your Email">
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <input type="text" name="subject" id="subject" class="form-control border-1 rounded-0 shadow-none outline-none" placeholder="Enter Your Subject">
+                                </div>
+                            </div>
+                            <button type="submit" class="py-3 px-4 btn text-uppercase rounded-0 ">SEND</button>
+
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="contact_address_container">
+                            <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-home"></i></span>
+                                <div>
+                                    <h5 class="mb-0">Buttonwood, California.</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                            </div>
+                            <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-phone"></i></span>
+                                <div>
+                                    <h5 class="mb-0">+1 253 565 2365</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                            </div>
+                            <div class="mb-4 d-flex justify-content-start align-items-center contact_address">
+                                <span class="d-block me-3"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <h5 class="mb-0">support@colorlib.com</h5>
+                                    <span>Rosemead, CA 91770</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 log_out_container">
+                            <div class="d-grid">
+                                <a href="#" class="btn py-3 rounded-0 global_sub_btn">Log Out</a>
+                            </div>
+                        </div>
+                        <div class="log_in_container">
+                            <form action="" method="POST" >
+                                <h3 class="form_title">Log In</h3>
+                                <div class="mb-4 form-group">
+                                    <input type="email" name="email" id="email" class="form-control rounded-0 shadow-none outline-none" placeholder="Enter Your Email">
+                                </div>
+                                <div class="mb-4 form-group">
+                                    <input type="password" name="password" id="password" class="form-control rounded-0 shadow-none outline-none" placeholder="Enter Your password">
+                                </div>
+                                <div class="mb-4 d-grid">
+                                    <button type="submit" class="btn py-3 rounded-0 text-uppercase global_sub_btn">submit</button>
+                                </div>
+                            </form>
+                            <div class="alert alert-danger">Incorrect Password</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact section -->
+
+        <!-- Start Footer Section -->
+        <footer>
+            <div class="container-fluid">
+                <div class="elfsight-app-82f81b05-b268-45da-8c0e-03fd4e186564"></div>
+                <div class="py-5 footer_container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="p-3 footer_content_container">
+                                <div class="mb-4 footer_header">
+                                    <div class="footer_logo_img">
+                                        <img src="./assets/imgs/logos/logo2_footer.png.webp" width="170px" alt="footer logo">
+                                    </div>
+                                </div>
+                                <div class="mb-5 footer_body">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque esse a. Nihil, explicabo repudiandae. Cum quod unde sunt nam velit in nulla. Quisquam architecto, dolorum iusto quos suscipit libero?
+                                    </p>
+                                </div>
+                                <div class="footer_foot">
+                                    <ul class="list-unstyled d-flex"> 
+                                        <li class=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class=""><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li class=""><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                            <h4>Quick Links</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                            <h4>Shop Category</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                            <h4>Pertners</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">Image Licensin</a></li>
+                                                <li class="mb-3"><a href="#">Style Guide</a></li>
+                                                <li class="mb-3"><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                                    <div class="p-3 footer_content_container">
+                                        <div class="mb-4 footer_header">
+                                            <h4>Get in touch</h4>
+                                        </div>
+                                        <div class="mb-5 footer_body">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3"><a href="#">(89) 982-278 356</a></li>
+                                                <li class="mb-3"><a href="#">demo@colorlib.com</a></li>
+                                                <li class="mb-3"><a href="#">67/A, Colorlib, Green road, NYC</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer section -->
+
+
+        <!-- bootstrap css1 js1 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- jquery 3.70.00 css0 js1 -->
+        <script src="./assets/libs/jquery.js"></script>
+
+        <!-- owlcarousel css2 js -->
+        <script src="./assets/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+        <!-- elfsight viber -->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        
+
+        <!-- custom js -->
+        <script src="./js/app.js"></script>
+    </body>
+</html>
+
